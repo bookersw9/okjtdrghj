@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: omke
+  name: jfieuir
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: omke
+      app: jfieuir
   template:
     metadata:
       labels:
-        app: omke
+        app: jfieuir
     spec:
       containers:
-      - image: okteto.dev/omke:latest
-        name: omke
+      - image: okteto.dev/jfieuir:latest
+        name: jfieuir
         ports:
         - containerPort: 8080
         env:
